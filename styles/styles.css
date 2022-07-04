@@ -669,15 +669,13 @@ footer,
   border: 0;
   width: 30px;
   height: 30px;
-
-  background-color: var(--text-accent-color)
+  background-color: var(--text-accent-color);
+  background-image: url(../logo/close.svg);
+  background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.button .close-icon {
-  width: 30px;
-  height: 30px;
-}
 
-.button .close-icon:hover {
+.close-button:hover {
   cursor: pointer;
 }

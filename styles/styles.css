@@ -67,9 +67,7 @@ header {
   height: 16px;
   margin-right: 10px;
   fill: var(--text-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+  transition: fill 250ms var(--animation-timing-function);
 }
 
 .contact:hover .header-icon,
@@ -170,9 +168,8 @@ header {
   margin: 0;
   padding: 0;
   cursor: pointer;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+  transition: color 250ms var(--animation-timing-function);
+  
 }
 
 .nav {
@@ -181,10 +178,7 @@ header {
   color: var(--header-color);
   padding-top: 32px;
   padding-bottom: 32px;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+  transition: color 250ms var(--animation-timing-function);
 }
 .nav:hover,
 .nav:focus {
@@ -198,9 +192,7 @@ header {
   color: var(--text-color);
   font-weight: 500;
   line-height: 1.14;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+transition: color 250ms var(--animation-timing-function);
 }
 .contact:hover,
 .contact:focus {
@@ -233,9 +225,7 @@ button.order {
   border-radius: 4px;
   padding: 10px 32px;
   margin: 30px auto 0;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+  transition: color 250ms var(--animation-timing-function), background-color 250ms var(--animation-timing-function);
 }
 
 button.order:hover,
@@ -382,9 +372,7 @@ button.order:focus {
   height: 92px;
   border: 1px solid rgba(175, 177, 184, 1);
   border-radius: 4px;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+transition: border-color 250ms var(--animation-timing-function);
 }
 
 .customer-item:hover,
@@ -399,9 +387,7 @@ button.order:focus {
   width: 106px;
   height: 60px;
   fill: var(--logo-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+  transition: fill 250ms var(--animation-timing-function);
 }
 .customer-item:hover .customer-icon,
 .customer-item:focus .customer-icon {
@@ -434,9 +420,9 @@ button.order:focus {
   align-items: center;
   border: none;
   border-radius: 4px;
-  transition-property: color background-color box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+transition: color 250ms var(--animation-timing-function),
+ background-color 250ms var(--animation-timing-function),
+  box-shadow 250ms var(--animation-timing-function);
 }
 
 .filter-item:not(:last-child) {
@@ -495,9 +481,7 @@ button.filter:focus {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 370px;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+  transition: box-shadow 250ms var(--animation-timing-function);
 }
 
 .project-item:nth-child(3n) {
@@ -519,9 +503,7 @@ button.filter:focus {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+transition: transform 250ms var(--animation-timing-function);
 }
 .project-link:hover .overlay-text,
 .project-link:focus .overlay-text {
@@ -599,9 +581,7 @@ footer,
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+  transition: background-color 250ms var(--animation-timing-function);
 }
 
 .social-link:hover,
@@ -612,15 +592,11 @@ footer,
   width: 20px;
   height: 20px;
   fill: var(--logo-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+transition: color 250ms var(--animation-timing-function);
 }
 .social-icon.footer-icon {
   fill: var(--text-accent-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: (--animation-timing-function);
+transition: fill 250ms var(--animation-timing-function);
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
@@ -635,8 +611,8 @@ footer,
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms var(--animation-timing-function);
